@@ -1,13 +1,28 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Greeting from './components/Greeting';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Home from './views/home';
 
-function App() {
-  return (
+const theme = createTheme({
+  palette: {
+    mode: 'light',
+    blue: {
+      dark: '#414F6B',
+      light: '#63769D',
+    },
+    grey: {
+      dark: '#4D4D4D',
+      light: '#AFB3BD',
+    },
+  },
+});
+
+const App = () => (
+  <ThemeProvider theme={theme}>
     <Routes>
-      <Route path="/" element={<Greeting />} />
+      <Route path="/" element={<Home />} />
     </Routes>
-  );
-}
+  </ThemeProvider>
+);
 
 export default App;
