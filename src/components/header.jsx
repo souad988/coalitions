@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <Box>
       <Grid container className={classes.header}>
-        <Grid item lg={3} xs={6}>text</Grid>
+        <Grid item lg={3} xs={6} />
         <Grid item lg={3} xs={6}>text</Grid>
       </Grid>
     </Box>
