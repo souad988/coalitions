@@ -2,6 +2,25 @@ const mainStyles = (theme) => ({
   container: {
     position: 'relative',
   },
+  headerContainer: {
+    position: 'absolute',
+    width: '80%',
+    padding: '2vh 0',
+    left: '10%',
+    zIndex: 1,
+  },
+  lightLink: {
+    color: theme.palette.link.light,
+    '&:hover': {
+      color: theme.palette.link.dark,
+    },
+  },
+  darkLink: {
+    color: theme.palette.link.dark,
+    '&:hover': {
+      color: theme.palette.link.dark,
+    },
+  },
   hiddenBg: {
     opacity: 0.3,
     background: 'url(images/bg/page1_bg2.png)',

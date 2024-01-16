@@ -13,6 +13,10 @@ const theme = createTheme({
       dark: '#4D4D4D',
       light: '#AFB3BD',
     },
+    link: {
+      light: '#FFFFFF',
+      dark: '#414F6B',
+    },
   },
 });
 
