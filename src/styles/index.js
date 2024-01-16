@@ -10,6 +10,7 @@ const mainStyles = (theme) => ({
     position: 'sticky',
     padding: '2vh 10%',
     left: '0',
+    top: 0,
     zIndex: 1,
   },
   lightLink: {
@@ -21,7 +22,7 @@ const mainStyles = (theme) => ({
   darkLink: {
     color: theme.palette.link.dark,
     '&:hover': {
-      color: theme.palette.link.dark,
+      color: theme.palette.grey.light,
     },
   },
   hiddenBg: {
