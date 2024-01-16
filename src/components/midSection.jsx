@@ -1,6 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Box, Typography, Grid } from '@mui/material';
+import {
+  Box, Typography, Grid, Hidden,
+} from '@mui/material';
 import useCustomStyles from '../styles/useCustonStyles';
 import mainStyles from '../styles';
 import Styles from '../styles/components/midSection';
@@ -10,7 +12,8 @@ const MidSection = () => {
   const classes = useCustomStyles(Styles);
 
   return (
-    <Box classeName={classes.container}>
+    <Box className={classes.container}>
+      <img src="images/bg/page2_bg.png" style={{ visibility: 'hidden' }} />
       <Grid container>
         <Grid container item>
           <Grid item>
