@@ -1,12 +1,15 @@
 const mainStyles = (theme) => ({
+  mainContainer: {
+    width: '100%',
+  },
   container: {
-    position: 'relative',
+    minHeight: '100vh',
+    width: '100%',
   },
   headerContainer: {
-    position: 'absolute',
-    width: '80%',
-    padding: '2vh 0',
-    left: '10%',
+    position: 'sticky',
+    padding: '2vh 10%',
+    left: '0',
     zIndex: 1,
   },
   lightLink: {
@@ -23,8 +26,9 @@ const mainStyles = (theme) => ({
   },
   hiddenBg: {
     opacity: 0.3,
-    background: 'url(images/bg/page1_bg2.png)',
+    background: 'url(images/bg/page1_bg2_169.png)',
     position: 'absolute',
+    top: 0,
     minHeight: '100vh',
     width: '100%',
   },
@@ -48,7 +52,6 @@ const mainStyles = (theme) => ({
     },
   },
   headline1: {
-
     color: theme.palette.blue.dark,
   },
   headline2: {
