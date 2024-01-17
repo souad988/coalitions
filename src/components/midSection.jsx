@@ -1,17 +1,58 @@
 import React from 'react';
 import clsx from 'clsx';
 import {
-
   Box, Typography, Grid, Container,
 } from '@mui/material';
 import useCustomStyles from '../styles/useCustonStyles';
 import mainStyles from '../styles';
 import Styles from '../styles/components/midSection';
+import CustomCarousel from './customCarousel';
 
 const MidSection = () => {
   const mainClasses = useCustomStyles(mainStyles);
   const classes = useCustomStyles(Styles);
-
+  const imageArray = [
+    {
+      imageUrl: 'images/history1.jpg',
+      id: '1',
+      descr: 'First image',
+    },
+    {
+      imageUrl: 'images/history1.jpg',
+      id: '2',
+      descr: 'Second image',
+    },
+    {
+      imageUrl: 'images/history1.jpg',
+      id: '3',
+      descr: 'First image',
+    },
+    {
+      imageUrl: 'images/history1.jpg',
+      id: '4',
+      descr: 'Second image',
+    },
+    {
+      imageUrl: 'images/history1.jpg',
+      id: '5',
+      descr: 'First image',
+    },
+    {
+      imageUrl: 'images/history2.jpg',
+      id: '6',
+      descr: 'Second image',
+    },
+    {
+      imageUrl: 'images/history1.jpg',
+      id: '7',
+      descr: 'First image',
+    },
+    {
+      imageUrl: 'images/history2.jpg',
+      id: '8',
+      descr: 'Second image',
+    },
+  ];
   return (
     <Box className={classes.container} key="history">
       <Container>
@@ -46,7 +87,9 @@ const MidSection = () => {
             </Grid>
           </Grid>
         </Grid>
+
       </Container>
+      <CustomCarousel items={imageArray} />
     </Box>
   );
 };
