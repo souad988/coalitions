@@ -1,17 +1,6 @@
 const mainStyles = (theme) => ({
-  mainContainer: {
-    width: '100%',
-  },
   container: {
-    minHeight: '100vh',
     width: '100%',
-  },
-  headerContainer: {
-    position: 'sticky',
-    padding: '2vh 10%',
-    left: '0',
-    top: 0,
-    zIndex: 1,
   },
   lightLink: {
     color: theme.palette.link.light,
@@ -60,6 +49,12 @@ const mainStyles = (theme) => ({
   },
   fullHeight: {
     minHeight: '100vh',
+  },
+  relativePosition: {
+    position: 'relative',
+  },
+  absolutePosition: {
+    position: 'absolute',
   },
 });
 export default mainStyles;

@@ -1,7 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 import {
-  Box, Typography, Grid, Hidden,
+
+  Box, Typography, Grid, Container,
 } from '@mui/material';
 import useCustomStyles from '../styles/useCustonStyles';
 import mainStyles from '../styles';
@@ -12,28 +13,40 @@ const MidSection = () => {
   const classes = useCustomStyles(Styles);
 
   return (
-    <Box className={classes.container}>
-      <img src="images/bg/page2_bg.png" style={{ visibility: 'hidden' }} />
-      <Grid container>
-        <Grid container item>
-          <Grid item>
-            <Typography variant="h1" className={clsx(mainClasses.headline2)}>01.</Typography>
+    <Box className={classes.container} key="history">
+      <Container>
+        <Grid container flexDirection="column">
+          <Grid item container flexDirection="row" justifyContent="flex-start">
+
+            <Grid item className={classes.flexButtom}>
+              <Typography variant="h1">01</Typography>
+            </Grid>
+            <Grid item>
+              <Grid container className={mainClasses.relativePosition} flexDirection="column" justifyContent="flex-end">
+                <Grid item>
+                  <Typography className={mainClasses.absolutePosition} variant="h4" style={{ top: '50%' }}>HISTORY</Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="h1">.</Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+
           </Grid>
-          <Grid item>
-            <Typography variant="4" className={clsx(mainClasses.headline1)}>HISTORY</Typography>
+          <Grid item container justifyContent="flex-end">
+            <Grid item xs={11}>
+              <Typography variant="body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra,
+                rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex,
+                iaculis sed erat sed,blandit tincidunt quam.
+                Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+                gravida quis hendrerit ac,
+                tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
-        <Grid item>
-          <Typography variant="body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra,
-            rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex,
-            iaculis sed erat sed,blandit tincidunt quam.
-            Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
-            gravida quis hendrerit ac,
-            tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
-          </Typography>
-        </Grid>
-      </Grid>
+      </Container>
     </Box>
   );
 };
