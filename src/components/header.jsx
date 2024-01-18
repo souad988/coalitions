@@ -17,18 +17,18 @@ const Header = (props) => {
     <Box className={localClasses.headerContainer} sx={{ backgroundColor: trigger ? theme.palette.link.light : 'transparent' }}>
       <Grid container className={classes.header} justifyContent="space-between" alignItems="center">
         <Grid item lg={3} xs={6}>
-          <HashLink smooth to="/home#home" className={localClasses.logo}>
+          <HashLink smooth to="/" className={localClasses.logo}>
             <img src="images/icon_header.png" alt="icon" />
           </HashLink>
         </Grid>
         <Grid container item lg={3} xs={6} justifyContent="space-between">
           <Grid item>
-            <HashLink smooth to="#history" className={trigger ? classes.darkLink : classes.lightLink}>
+            <HashLink smooth to="/page2#history" className={trigger ? classes.darkLink : classes.lightLink}>
               01.HISTORY
             </HashLink>
           </Grid>
           <Grid item>
-            <HashLink smooth to="/#mountains" className={trigger ? classes.darkLink : classes.lightLink}>
+            <HashLink smooth to="/page2#mountains" className={trigger ? classes.darkLink : classes.lightLink}>
               02.TEAM
             </HashLink>
           </Grid>

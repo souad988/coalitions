@@ -6,11 +6,11 @@ import useCustomStyles from '../styles/useCustonStyles';
 import mainStyles from '../styles';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import HeadlineSection from '../components/headlineSection';
+import MidSection from '../components/midSection';
 
 /*  */
 
-function Home() {
+const Page2 = () => {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 10,
@@ -20,10 +20,9 @@ function Home() {
   return (
     <Box className={classes.mainContainer}>
       <Header trigger={trigger} />
-      <HeadlineSection />
+      <MidSection />
       <Footer />
     </Box>
   );
-}
-
-export default Home;
+};
+export default Page2;

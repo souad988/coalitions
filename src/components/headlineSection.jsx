@@ -1,14 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
 import {
-  Box, Typography, Grid, useScrollTrigger,
+  Box, Typography, Grid,
 } from '@mui/material';
 import useCustomStyles from '../styles/useCustonStyles';
 import mainStyles from '../styles';
-import styles from '../styles/views/home';
 
 const HeadlineSection = () => {
-  const localClasses = useCustomStyles(styles);
   const classes = useCustomStyles(mainStyles);
 
   return (

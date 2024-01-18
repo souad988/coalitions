@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import {
   Box, Typography, Grid, Container,
 } from '@mui/material';
@@ -87,7 +86,6 @@ const MidSection = () => {
             </Grid>
           </Grid>
         </Grid>
-
       </Container>
       <CustomCarousel items={imageArray} />
     </Box>

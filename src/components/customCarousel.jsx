@@ -2,36 +2,39 @@ import React, { useState } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import {
-  Box, Typography, Grid, Container,
+  Box, Grid, Container, useMediaQuery, useTheme,
 } from '@mui/material';
+import CustomAccordions from './customAccordion';
 import useCustomStyles from '../styles/useCustonStyles';
-import mainStyles from '../styles';
 import styles from '../styles/components/carousel';
 
 const CustomCarousel = (props) => {
   const { items } = props;
-  const mainClasses = useCustomStyles(mainStyles);
+  const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down('sm'));
   const classes = useCustomStyles(styles);
   const [start, setStart] = useState(0);
   const [sequence, setSequence] = useState(items.slice(start, start + 4));
   const btns = Math.ceil(items.length / 4);
   const slide = (index) => {
-    setStart(index * 4);
-    setSequence(items.slice(start, start + 4));
+    const newStart = index * 4;
+    setStart(newStart);
+    setSequence(items.slice(newStart, newStart + 4));
   };
-
   const divArray = Array.from({ length: btns }, (_, index) => index);
   return (
     <Box className={classes.container}>
       <Container>
+
         <Grid container direction="column">
           <Grid item container alignItems="center" justifyContent="center">
-            {sequence.map((item, index) => (
+            {sequence.map((item) => (mobile ? (
+              <CustomAccordions key={item.id} item={item} expandedId={item.id} />
+            ) : (
               <Grid item key={`image${item.id}`} className={classes.card}>
                 <img src={item.imageUrl} alt={item.descr} />
               </Grid>
-
-            ))}
+            )))}
           </Grid>
           <Grid item container alignItems="center" justifyContent="center">
             {divArray.map((number) => (
@@ -40,7 +43,7 @@ const CustomCarousel = (props) => {
                 item
                 key={number + 1}
                 onClick={() => slide(number)}
-             />
+              />
             ))}
           </Grid>
         </Grid>
