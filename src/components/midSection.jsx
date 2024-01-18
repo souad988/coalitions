@@ -53,7 +53,7 @@ const MidSection = () => {
     },
   ];
   return (
-    <Box className={classes.container} key="history">
+    <Box className={classes.container} id="history">
       <Container>
         <Grid container flexDirection="column">
           <Grid item container flexDirection="row" justifyContent="flex-start">

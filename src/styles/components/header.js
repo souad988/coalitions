@@ -1,4 +1,4 @@
-const styles = () => ({
+const styles = (theme) => ({
   logo: {
     '&:hove': {
       opacity: 0.7,
@@ -13,6 +13,19 @@ const styles = () => ({
     height: '8vh',
     display: 'flex',
     alignItems: 'center',
+  },
+  mobileHeaderContainer: {
+    position: 'absolute',
+    top: 0,
+    zIndex: 2,
+    width: '100vw',
+    height: '30vh',
+    boxShadow: `3px 3px 4px ${theme.palette.grey.dark}`,
+    backgroundColor: theme.palette.link.light,
+    padding: '0 8vw',
+  },
+  mobileHeaderMenu: {
+    height: '20vh',
   },
 });
 
