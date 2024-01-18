@@ -10,7 +10,7 @@ const theme = createTheme({
       fontFamily: 'Oswald, sans-serif',
       fontWeight: 900,
       color: '#414F6B',
-      fontSize: '3rem', // Default font size for all screens
+      fontSize: '4rem', // Default font size for all screens
       '@media (min-width:600px)': {
         fontSize: '6rem', // Font size for screens larger than 600px (tablet and up)
       },
@@ -21,7 +21,7 @@ const theme = createTheme({
     h1Secondary: {
       fontWeight: 900,
       color: '#4D4D4D', // Second color
-      fontSize: '3rem', // Default font size for all screens
+      fontSize: '4rem', // Default font size for all screens
       '@media (min-width:600px)': {
         fontSize: '6rem', // Font size for screens larger than 600px (tablet and up)
       },
@@ -34,6 +34,13 @@ const theme = createTheme({
       fontFamily: 'Oswald, sans-serif',
       fontWeight: 900,
       color: '#4D4D4D',
+      fontSize: '2rem', // Default font size for all screens
+      '@media (min-width:600px)': {
+        fontSize: '3rem', // Font size for screens larger than 600px (tablet and up)
+      },
+      '@media (min-width:1024px)': {
+        fontSize: '3rem', // Font size for screens larger than 1024px (desktop and up)
+      },
     },
     body: {
       color: '#4D4D4D',

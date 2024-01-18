@@ -4,16 +4,22 @@ const Styles = (theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     width: '100%',
-    minHeight: '100vh',
+    minHeight: '82vh',
     color: theme.palette.grey.light,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    paddingTop: '20vh',
+    paddingTop: '10vh',
   },
   flexButtom: {
     display: 'flex',
     alignItems: 'flex-end',
+  },
+  h4: {
+    top: '35%',
+    [theme.breakpoints.down('900')]: {
+      top: '25%',
+    },
   },
 });
 

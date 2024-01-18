@@ -3,7 +3,6 @@ import { Box } from '@mui/material';
 import useCustomStyles from '../styles/useCustonStyles';
 import mainStyles from '../styles';
 import Header from '../components/header';
-import Footer from '../components/footer';
 import HeadlineSection from '../components/headlineSection';
 
 /*  */
@@ -15,7 +14,6 @@ function Home() {
     <Box className={classes.mainContainer}>
       <Header />
       <HeadlineSection />
-      <Footer />
     </Box>
   );
 }

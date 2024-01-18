@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import {
   Box, Typography, Grid, Container,
 } from '@mui/material';
@@ -64,7 +65,7 @@ const MidSection = () => {
             <Grid item>
               <Grid container className={mainClasses.relativePosition} flexDirection="column" justifyContent="flex-end">
                 <Grid item>
-                  <Typography className={mainClasses.absolutePosition} variant="h4" style={{ top: '50%' }}>HISTORY</Typography>
+                  <Typography className={clsx(mainClasses.absolutePosition, classes.h4)} variant="h4">HISTORY</Typography>
                 </Grid>
                 <Grid item>
                   <Typography variant="h1">.</Typography>
