@@ -14,7 +14,7 @@ const HeadlineSection = () => {
       <Box className={clsx(classes.hiddenBg)} />
       <img
         src="images/page1.jpg"
-        className={clsx(classes.homeContainer, classes.subContainer)}
+        className={clsx(classes.homeContainer, classes.lowOpacity, classes.subContainer)}
         alt="image1"
       />
       <Grid container className={classes.subContainer} justifyContent="center" alignItems="center">
@@ -31,6 +31,11 @@ const HeadlineSection = () => {
           </Typography>
         </Grid>
       </Grid>
+      <img
+        src="images/page1_no_bg.png"
+        className={clsx(classes.homeContainer, classes.subContainer)}
+        alt="image1"
+      />
     </Box>
   );
 };

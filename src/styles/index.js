@@ -32,6 +32,8 @@ const mainStyles = (theme) => ({
     minHeight: '100vh',
     width: '100%',
     ObjectFit: 'cover',
+  },
+  lowOpacity: {
     opacity: 0.8,
   },
   headline: {
