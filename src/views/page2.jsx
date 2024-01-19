@@ -7,6 +7,7 @@ import mainStyles from '../styles';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import MidSection from '../components/midSection';
+import TeamSection from '../components/teamSection';
 
 /*  */
 
@@ -21,6 +22,7 @@ const Page2 = () => {
     <Box className={classes.mainContainer}>
       <Header trigger={trigger} />
       <MidSection />
+      <TeamSection />
       <Footer />
     </Box>
   );
