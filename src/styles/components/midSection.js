@@ -17,6 +17,7 @@ const Styles = (theme) => ({
     backgroundPosition: 'center',
     width: '100%',
     minHeight: '82vh',
+    paddingTop: '20vh',
   },
   flexButtom: {
     display: 'flex',

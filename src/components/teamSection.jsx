@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import {
   Box,
@@ -7,9 +7,11 @@ import useCustomStyles from '../styles/useCustonStyles';
 import Styles from '../styles/components/midSection';
 import HeadlineComponent from './headlineComponent';
 import Schedual from './schedual';
+import MountainHeader from './mountainHeader';
 
 const TeamSection = () => {
   const { team } = useSelector((state) => state.history);
+  const [mountain, setMountain] = useState(team?.mountains[0]);
   console.log(team);
   const classes = useCustomStyles(Styles);
   return (
@@ -19,9 +21,9 @@ const TeamSection = () => {
         title2={team?.headlines.title2}
         text={team?.headlines.text}
       />
-
+      <MountainHeader setMountain={setMountain} />
       <Box className={classes.climbContainer}>
-        <Schedual schedual={team.mountains[0].schedual} />
+        <Schedual schedual={mountain.schedual} />
       </Box>
     </Box>
   );
