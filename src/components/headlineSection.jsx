@@ -13,19 +13,19 @@ const HeadlineSection = () => {
     <Box className={classes.container}>
       <Box className={clsx(classes.hiddenBg)} />
       <img
-        src="images/bg/page1_bg_169.png"
+        src="images/page1.jpg"
         className={clsx(classes.homeContainer, classes.subContainer)}
         alt="image1"
       />
       <Grid container className={classes.subContainer} justifyContent="center" alignItems="center">
         <Grid item>
           <Typography
-            variant="h1"
+            variant="h1Secondary"
           >
             LOSANGELES
           </Typography>
           <Typography
-            variant="h1Secondary"
+            variant="h1"
           >
             MOUNTAINS
           </Typography>

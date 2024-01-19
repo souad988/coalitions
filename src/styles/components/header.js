@@ -1,9 +1,4 @@
 const styles = (theme) => ({
-  logo: {
-    '&:hove': {
-      opacity: 0.7,
-    },
-  },
   headerContainer: {
     position: 'sticky',
     padding: '0 10%',
