@@ -22,9 +22,10 @@ const mainStyles = (theme) => ({
     minHeight: '100vh',
     width: '100%',
   },
-  subContainer: {
-    position: 'absolute',
+  fullHeight: {
     minHeight: '100vh',
+  },
+  rootAbsolutePosition: {
     top: 0,
     left: 0,
   },
@@ -48,9 +49,6 @@ const mainStyles = (theme) => ({
   },
   headline2: {
     color: theme.palette.grey.dark,
-  },
-  fullHeight: {
-    minHeight: '100vh',
   },
   relativePosition: {
     position: 'relative',
@@ -80,6 +78,12 @@ const mainStyles = (theme) => ({
   },
   boxShadow: {
     boxShadow: `1px 1px 6px ${theme.palette.blue.dark}`,
+  },
+  marginTop: {
+    marginTop: '25vh',
+    [theme.breakpoints.up('900')]: {
+      marginTop: '15vh',
+    },
   },
 });
 export default mainStyles;
