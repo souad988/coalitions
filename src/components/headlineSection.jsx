@@ -5,24 +5,21 @@ import {
 } from '@mui/material';
 import useCustomStyles from '../styles/useCustonStyles';
 import mainStyles from '../styles';
-import styles from '../styles/components/headlineSection';
 
 const HeadlineSection = () => {
   const classes = useCustomStyles(mainStyles);
-  const localClasses = useCustomStyles(styles);
   return (
     <Box className={classes.container}>
       <Box className={clsx(classes.hiddenBg)} />
-      <img
-        src="images/page1.jpg"
+      <Box
         className={clsx(
           classes.homeContainer,
           classes.lowOpacity,
           classes.absolutePosition,
           classes.rootAbsolutePosition,
           classes.fullHeight,
+          classes.container1,
         )}
-        alt="image1"
       />
       <Grid container className={clsx(classes.absolutePosition, classes.marginTop)} justifyContent="center" alignItems="center">
         <Grid item>
@@ -45,6 +42,7 @@ const HeadlineSection = () => {
           classes.absolutePosition,
           classes.rootAbsolutePosition,
           classes.fullHeight,
+          classes.cover,
         )}
         alt="image1"
       />

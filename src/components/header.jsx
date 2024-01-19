@@ -14,7 +14,7 @@ import Logo from './logo';
 
 const Header = () => {
   const theme = useTheme();
-  const mobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const mobile = useMediaQuery(theme.breakpoints.down('md'));
   const location = useLocation();
   const classes = useCustomStyles(mainStyles);
   const localClasses = useCustomStyles(styles);
@@ -39,7 +39,7 @@ const Header = () => {
               location.pathname !== '/' && <Grid item><Logo /></Grid>
             }
           </Grid>
-          <Grid container item lg={3} xs={6} justifyContent="space-between" style={{ display: mobile ? 'none' : 'flex' }}>
+          <Grid container item lg={2} md={3} xs={6} justifyContent="space-between" style={{ display: mobile ? 'none' : 'flex' }}>
             <Grid item>
               <HashLink smooth to="/page2#history" className={location.pathname === '/' ? classes.lightLink : classes.darkLink}>
                 01.HISTORY

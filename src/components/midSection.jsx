@@ -10,7 +10,6 @@ import HeadlineComponent from './headlineComponent';
 
 const MidSection = () => {
   const { history } = useSelector((state) => state.history);
-  console.log('history', history);
   const classes = useCustomStyles(Styles);
 
   return (

@@ -12,7 +12,6 @@ import MountainHeader from './mountainHeader';
 const TeamSection = () => {
   const { team } = useSelector((state) => state.history);
   const [mountain, setMountain] = useState(team?.mountains[0]);
-  console.log(team);
   const classes = useCustomStyles(Styles);
   return (
     <Box id="team">

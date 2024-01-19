@@ -15,12 +15,19 @@ const mainStyles = (theme) => ({
     },
   },
   hiddenBg: {
-    opacity: 0.3,
+    opacity: 0.8,
     background: 'url(images/page1_bg.png)',
     position: 'absolute',
     top: 0,
     minHeight: '100vh',
     width: '100%',
+  },
+  container1: {
+    background: 'url(images/page1.jpg) no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '100%',
+    minHeight: '100vh',
   },
   fullHeight: {
     minHeight: '100vh',
@@ -84,6 +91,9 @@ const mainStyles = (theme) => ({
     [theme.breakpoints.up('900')]: {
       marginTop: '15vh',
     },
+  },
+  cover: {
+    objectFit: 'cover',
   },
 });
 export default mainStyles;

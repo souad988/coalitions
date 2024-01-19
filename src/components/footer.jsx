@@ -14,13 +14,13 @@ const Footer = () => {
       <Grid container justifyContent="space-between" alignItems="center">
         <Grid container item lg={3} xs={6}>
           <Grid item>
-            <img src="images/icons/icon.png" alt="icon" />
+            <img src="images/icon_header.png" alt="icon" />
           </Grid>
           <Grid item alignItems="center">
             <Logo />
           </Grid>
         </Grid>
-        <Grid item lg={3} xs={6}>
+        <Grid item lg={3} xs={4}>
           <Typography variant="body" size="small">Copy Rights </Typography>
         </Grid>
       </Grid>
