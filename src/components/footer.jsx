@@ -1,27 +1,31 @@
 import React from 'react';
-import { Container, Grid, Typography } from '@mui/material';
+import clsx from 'clsx';
+import {
+  Grid, Typography, Box,
+} from '@mui/material';
 import useCustomStyles from '../styles/useCustonStyles';
 import mainStyles from '../styles';
+import Logo from './logo';
 
 const Footer = () => {
   const classes = useCustomStyles(mainStyles);
   return (
-    <Container>
-      <Grid container className={classes.header} justifyContent="space-between" alignItems="center">
+    <Box className={clsx(classes.containerPaddingSmall, classes.relativePosition)}>
+      <Grid container justifyContent="space-between" alignItems="center">
         <Grid container item lg={3} xs={6}>
           <Grid item>
             <img src="images/icons/icon.png" alt="icon" />
           </Grid>
-          <Grid item>
-            <Typography variant="h6">LOSANGELES</Typography>
-            <Typography variant="h6">MOUNTAINS</Typography>
+          <Grid item alignItems="center">
+            <Logo />
           </Grid>
         </Grid>
         <Grid item lg={3} xs={6}>
           <Typography variant="body" size="small">Copy Rights </Typography>
         </Grid>
       </Grid>
-    </Container>
+      <Box className={clsx(classes.absolutePosition, classes.fullCover, classes.blueDarkBg)} />
+    </Box>
   );
 };
 

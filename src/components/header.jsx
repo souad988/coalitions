@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import clsx from 'clsx';
 import { HashLink } from 'react-router-hash-link';
 import { useLocation } from 'react-router-dom';
 import {
@@ -9,6 +10,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import useCustomStyles from '../styles/useCustonStyles';
 import mainStyles from '../styles';
 import styles from '../styles/components/header';
+import Logo from './logo';
 
 const Header = () => {
   const theme = useTheme();
@@ -20,12 +22,22 @@ const Header = () => {
 
   return (
     <>
-      <Box className={localClasses.headerContainer} sx={{ backgroundColor: location.pathname === '/' ? 'transparent' : theme.palette.link.light }}>
+      <Box
+        className={
+          clsx(localClasses.headerContainer, location.pathname !== '/' && classes.boxShadow)
+}
+        sx={{ backgroundColor: location.pathname === '/' ? 'transparent' : theme.palette.link.light }}
+      >
         <Grid container className={classes.header} justifyContent="space-between" alignItems="center">
-          <Grid item lg={3} xs={6}>
-            <HashLink smooth to="/" className={localClasses.logo}>
-              <img src="images/icon_header.png" alt="icon" />
-            </HashLink>
+          <Grid container item lg={3} xs={6}>
+            <Grid item>
+              <HashLink smooth to="/" className={localClasses.logo}>
+                <img src="images/icon_header.png" alt="icon" />
+              </HashLink>
+            </Grid>
+            {
+              location.pathname !== '/' && <Grid item><Logo /></Grid>
+            }
           </Grid>
           <Grid container item lg={3} xs={6} justifyContent="space-between" style={{ display: mobile ? 'none' : 'flex' }}>
             <Grid item>

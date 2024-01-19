@@ -16,7 +16,7 @@ const mainStyles = (theme) => ({
   },
   hiddenBg: {
     opacity: 0.3,
-    background: 'url(images/bg/page1_bg2_169.png)',
+    background: 'url(images/page1_bg.png)',
     position: 'absolute',
     top: 0,
     minHeight: '100vh',
@@ -58,6 +58,26 @@ const mainStyles = (theme) => ({
   },
   verticalPadding: {
     padding: '5vh 10vw',
+  },
+  logoText: {
+    fontWeight: '900',
+    lineHeight: 1,
+  },
+  containerPaddingSmall: {
+    padding: '2vh 10vw',
+  },
+  fullCover: {
+    width: '100%',
+    height: '100%',
+  },
+  blueDarkBg: {
+    backgroundColor: theme.palette.blue.light,
+    opacity: 0.7,
+    top: 0,
+    left: 0,
+  },
+  boxShadow: {
+    boxShadow: `1px 1px 6px ${theme.palette.blue.dark}`,
   },
 });
 export default mainStyles;

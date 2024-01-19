@@ -10,12 +10,12 @@ const theme = createTheme({
       fontFamily: 'Oswald, sans-serif',
       fontWeight: 900,
       color: '#414F6B',
-      fontSize: '4rem', // Default font size for all screens
+      fontSize: '4.5rem', // Default font size for all screens
       '@media (min-width:600px)': {
-        fontSize: '6rem', // Font size for screens larger than 600px (tablet and up)
+        fontSize: '6.5rem', // Font size for screens larger than 600px (tablet and up)
       },
       '@media (min-width:1024px)': {
-        fontSize: '8rem', // Font size for screens larger than 1024px (desktop and up)
+        fontSize: '8.5rem', // Font size for screens larger than 1024px (desktop and up)
       },
     },
     h1Secondary: {
