@@ -11,6 +11,13 @@ const Styles = (theme) => ({
     justifyContent: 'space-between',
     paddingTop: '10vh',
   },
+  climbContainer: {
+    background: 'url(images/mountains.png) no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '100%',
+    minHeight: '82vh',
+  },
   flexButtom: {
     display: 'flex',
     alignItems: 'flex-end',

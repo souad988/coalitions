@@ -34,7 +34,7 @@ const Header = () => {
               </HashLink>
             </Grid>
             <Grid item>
-              <HashLink smooth to="/page2#mountains" className={location.pathname === '/' ? classes.lightLink : classes.darkLink}>
+              <HashLink smooth to="/page2#team" className={location.pathname === '/' ? classes.lightLink : classes.darkLink}>
                 02.TEAM
               </HashLink>
             </Grid>
@@ -72,7 +72,7 @@ const Header = () => {
             </HashLink>
           </Grid>
           <Grid item>
-            <HashLink smooth to="/page2#mountains" className={classes.darkLink} onClick={() => setOpen((state) => !state)}>
+            <HashLink smooth to="/page2#team" className={classes.darkLink} onClick={() => setOpen((state) => !state)}>
               02.TEAM
             </HashLink>
           </Grid>

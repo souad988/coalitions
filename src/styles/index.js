@@ -56,5 +56,8 @@ const mainStyles = (theme) => ({
   absolutePosition: {
     position: 'absolute',
   },
+  verticalPadding: {
+    padding: '5vh 10vw',
+  },
 });
 export default mainStyles;
