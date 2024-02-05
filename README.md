@@ -39,7 +39,7 @@
 
 # 📖 [Reservations] <a name="about-project"></a>
 
-**[Reservations]** is a react web application that Provides a frontend UI for a reservations app. 
+**[Reservations]** Experience a streamlined React-powered UI designed for effortless mountain trip reservations. Our project provides an engaging and user-friendly interface for travelers to explore, plan, and book mountain adventures with ease. With modern aesthetics and responsive design, our application offers a seamless reservation process, empowering users to embark on unforgettable journeys into the heart of nature's wonders. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,8 +56,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Setup react]**
-- **[Add redux]**
+- **[display reservations]**
+- **[Explore with images]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +114,9 @@ to be added ..
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add Create messages feature]**
+- [ ] **[Add form for booking]**
+- [ ] **[Add authentication]**
+- [ ] **[Add user reservations history]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -141,7 +143,7 @@ If you like this project please show your support by adding a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the microverse community for there continous support and help. 
+I would like to thank the Coalition community for the beautiful design. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
